@@ -7,14 +7,16 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "启动程序",
+            "name": "调试当前文件",
+            "protocol": "inspector",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\animation.ts",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+            "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+            "args": [
+                "${relativeFile}"
+            ],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
