@@ -16,7 +16,8 @@
             "args": [
                 "${relativeFile}"
             ],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceRoot}",
+            "console":"internalConsole",
         }
     ]
 }
