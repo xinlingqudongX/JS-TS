@@ -164,6 +164,7 @@ export interface ExtensionsManifest {
 export enum ExtensionsPermissions {
     Alarms = 'alarms',
     Storage = 'storage',
+    Cookies = 'cookies',
     Tabs = 'tabs',
     Debugger = 'debugger',
     DeclarativeNetRequest = 'declarativeNetRequest',
